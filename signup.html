@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meet-Up Event Planner</title>
+</head>
+<body>
+    
+  
+
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Meetup Event Planner</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left" style="margin-left:320px;">
+                <li >
+                        <a href="start.html" style="color:#ff3333;font-size:20px;"><b><i>Start a new event</i></b></a>
+                    </li></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="login.html">Sign in</a>
+                    </li>
+                    
+                    <li>
+                        <a href="signup.html" style=" color:orange;"><b> Sign up</b> </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <h1 style=" padding-left:50px; padding-top: 50px; color: rgb(229, 25, 55); "><b>Sign up</b></h1>
+    <hr>
+<div class="container" >
+    
+        <div id="logbox"  >
+           <form id="signup"  action="index.html" >
+                
+           
+        <h3 style="text-align:center;">Register an account to get started</h3>
+       <p style="text-align:center;"><b>Already a member? </b> <a href="login.html" style=" text-decoration:none;">Log in</a></p>
+       
+           <input type="text" placeholder="Full Name" name="user[name]" class="input pass" autofocus autocomplete required="required">
+               <input name="user[email]" type="email" placeholder="Email address" class="input pass" />
+               <input type="number" min="1947" max="2016"  placeholder="Date of Birth year" name="user[birthday]" class="input pass" required="required" >
+
+                <input name="user[password]" type="password" placeholder="Choose a password" required="required" class="input pass"/>
+                <input name="user[password2]" type="password" placeholder="Confirm password" required="required" class="input pass" />
+
+                <input type="submit"  style="width:150px; margin-left:auto;margin-right:auto;display:block ;bottom:0;"   value="Sign me up!" class="inputButton"/>
+
+            </form>
+       
+    </div>
+    <!--col-md-6-->
+
+
+</div>
+<footer class="footer" style="">
+  <div class="container">
+    <p >Find me on Facebook: <a href="http://fb.com/saeed.huzaifa" target="_blank">Huzaifa Saeed</a></p>
+    </div>
+    
+    
+</footer>
+</body>
+</html>

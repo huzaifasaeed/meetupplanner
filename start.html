@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meet-Up Event Planner</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Meetup Event Planner</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left" style="margin-left:320px;">
+                <li >
+                        <a href="start.html" style="color:#ff3333;font-size:20px;"><b><i>Start a new event</i></b></a>
+                    </li></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="login.html">Sign in</a>
+                    </li>
+                    
+                    <li>
+                        <a href="signup.html" style=" color:orange;"><b> Sign up</b> </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <h1 style=" padding-left:50px;padding-top: 50px; color: rgb(229, 25, 55); "><b>Start your own Meetup Event</b></h1>
+    <hr>
+ <div style="margin: 0 auto; max-width: 500px;  ">
+  <form action="index.html" >
+
+       
+        <h2 style="text-align:center;">General Information</h2>
+       
+       
+        <br>
+           <input class="input pass"  placeholder="Whats the Name of the Event?"  type="text"  required="required" autofocus autocomplete/>
+           <input class="input pass" placeholder="What type of event is it?" type="text" required autocomplete/>
+          
+           <input class="input pass" placeholder="Who's the host?" type="text"  required autocomplete />
+           
+ <br>
+
+        <h2 style="text-align:center;">When & Where</h2>
+       
+        
+          
+            <br>
+           
+           <input class="input pass"  placeholder="When's the event starting?" type="date" min="01-01-2016" max="01-12-2016" name="mydate" required autocomplete="off">
+           <input class="input pass"  placeholder="When's the event ending?" type="date" min="01-01-2016" max="01-12-2016" name="mydate" required autocomplete="off">
+           <input class="input pass" placeholder="Where's the event happening?" type="text" id="location" onclick="getLocation();" placeholder="Get Location" required />
+          <textarea class="input pass" placeholder="Additional Information about Event." rows="10" class="comment"></textarea>
+            
+     <input type="submit"  style="width:150px; margin-left:auto;margin-right:auto;display:block ;bottom:0;"   value="Create my Event" class="inputButton"/>
+        
+    </form>
+ </div>
+
+ <script type="text/javascript">
+		
+         function showLocation(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            alert("Latitude : " + latitude + " Longitude: " + longitude);
+         }
+
+         function errorHandler(err) {
+            if(err.code == 1) {
+               alert("Error: Access is denied!");
+            }
+            
+            else if( err.code == 2) {
+               alert("Error: Position is unavailable!");
+            }
+         }
+			
+         function getLocation(){
+
+            if(navigator.geolocation){
+               // timeout at 60000 milliseconds (60 seconds)
+               var options = {timeout:60000};
+               navigator.geolocation.getCurrentPosition(showLocation, errorHandler, options);
+            }
+            
+            else{
+               alert("Sorry, browser does not support geolocation!");
+            }
+         }
+			
+      </script>
+<footer class="footer" style="">
+   <div class="container">
+    <p >Find me on Facebook: <a href="http://fb.com/saeed.huzaifa" target="_blank">Huzaifa Saeed</a></p>
+    </div>
+    
+</footer>
+
+</body>
+</html>

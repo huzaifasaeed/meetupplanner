@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" manifest="demo.appcache">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meet-Up Event Planner</title>
+</head>
+<body>
+
+
+ <script src="upup.min.js"></script>
+  <script>
+    UpUp.start({
+      'content-url': 'index.html',
+      'assets': [
+        'bootstrap.min.js'
+        'start.html'
+        'signup.html'
+        'login.html'
+        'style.css'
+        'sw.js'
+        'upup.js'
+        'images/io16.jpg'
+        'images/event.jpg'
+        'images/WWDC-2016.jpg'
+        'demo.manifest.yml'
+        
+        // Other assets like images, JS libraries etc
+      ]
+    });
+  </script>
+
+<div id="image" class="section">
+
+     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Meetup Event Planner</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left" style="margin-left:320px;">
+                <li >
+                        <a href="start.html" style="color:#ff3333;font-size:20px;"><b><i>Start a new event</i></b></a>
+                    </li></ul>
+                <ul class="nav navbar-nav navbar-right">
+                    
+                    <li>
+                        <a href="login.html">Sign in</a>
+                    </li>
+                    
+                    <li>
+                        <a href="signup.html" style=" color:orange;"><b> Sign up</b> </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div style="position:relative;">
+    <h1 style="font-size: 70px;margin-top:100px;text-align:center; color:rgba(0, 0, 0, 0.8)"> Meetups are</h1>
+    <h4 style="font-size: 30px; text-align:center; padding-top:inherit; color:rgba(0, 0, 0,0.8)">Neighbors getting together to learn something, do something, share something… </h4>
+    </div>
+</div>
+
+<br>
+<div id="Groups" style="position:relative;" >
+
+
+<div class="wrapper">
+            
+            <div class="card radius shadowDepth1">
+                <div class="card__image border-tlr-radius">
+                    <img src="images/io16.jpg" alt="image" class="border-tlr-radius">
+                </div>
+
+                <div class="card__content card__padding">
+                   
+                    <div class="card__meta">
+                        <a href="#">Technology</a>
+                        <time>15th June</time>
+                    </div>
+
+                    <article class="card__article">
+                        <h2><a href="#">Google I/O 2016: all the big announcements</a></h2>
+
+                        <p>Google I/O 2016 took place between May 18-20 at the Shoreline Amphitheater in Mountain View, California...</p>
+                    </article>
+                </div>
+
+                <div class="card__action">
+                    
+                    <div class="card__author">
+                        <div class="card__author-content">
+                            By <a href="#">Huzaifa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+<div class="wrapper">
+            
+            <div class="card radius shadowDepth1">
+                <div class="card__image border-tlr-radius">
+                    <img src="images/WWDC-2016.jpg" alt="image" class="border-tlr-radius">
+                </div>
+
+                <div class="card__content card__padding">
+                   
+                    <div class="card__meta">
+                        <a href="#">Web Design</a>
+                        <time>June 13, 2016</time>
+                    </div>
+
+                    <article class="card__article">
+                        <h2><a href="#">Apple Special Event</a></h2>
+
+                        <p>At WWDC we made lots of major announcements. iOS 10 is our biggest release yet...</p>
+                    </article>
+                </div>
+
+                <div class="card__action">
+                    
+                    <div class="card__author">
+                        <div class="card__author-content">
+                            By <a href="#">Huzaifa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</div>
+
+</div>
+
+
+
+<footer class="footer" style="">
+  <div class="container">
+    <p >Find me on Facebook: <a href="http://fb.com/saeed.huzaifa" target="_blank">Huzaifa Saeed</a></p>
+    </div>
+    
+</footer>
+</body>
+</html>
